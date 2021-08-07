@@ -9,6 +9,18 @@ class Car {
 
     
 }
+
+
+class Student {
+
+  constructor(name , age){
+    this.className=name;
+    this.classAge=age
+  }
+}
+
+let student1=new Student("Sikhaled" , 20)
+console.log(student1);
 //creation of objects
 let myCar1 = new Car("Ford", 2014, "Gray")
 let myCar2 = new Car("Audi", 2019, "Green")

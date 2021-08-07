@@ -16,7 +16,7 @@ const people = [
 function findPerson(name) {
  for (let i = 0; i < people.length; i++) {
   
-
+// console.log(people[i]);
 // POUR CHAQUE ELEMENT DE LA TABLE : 
 
   let person = people[i]
@@ -25,6 +25,7 @@ function findPerson(name) {
   }
  }
 }
+
 
 
 // ES6
@@ -39,6 +40,7 @@ let first = numbers.find(myFunction)
 function myFunction (value, index, array) {
   return value > 18
 }
+console.log(first);
 // //or
 let first = numbers.find(value => {
   return value > 18
@@ -47,16 +49,17 @@ let first = numbers.find(value => {
 
 //FOREACH
 const people = [{ name: 'Max' }, { name: 'Jack' }, { name: 'Marry' }]
-
+// console.log(people[i].name);
 // JavaScript
-function showEachOne(name) {
+function showEachOne() {
  for (let i = 0; i < people.length; i++) {
    console.log(people[i].name)
  }
 }
+console.log(showEachOne());
 
 // ES6
-const showEachOne = ( ) => people.forEach(person => console.log(person.name))
+const showEachOne = ( ) => people.forEach(y => console.log(y.name))
 console.log(showEachOne())
 
 /*   FILTER  */
@@ -105,4 +108,4 @@ const products = [
 const fruits = ["Banana", "Orange", "Apple", "Mango"]
 fruits.includes("Mango")
 console.log(fruits.includes("Mango"))
-console.log(fruits.includes("hello"))
+// console.log(fruits.includes("hello"))
